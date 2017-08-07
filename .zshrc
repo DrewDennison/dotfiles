@@ -1,15 +1,21 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/dennison/.oh-my-zsh
+DEFAULT_USER=dennison
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-DEFAULT_USER="ddennison"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -46,16 +52,13 @@ DEFAULT_USER="ddennison"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast git-extras common-aliases dirhistory python sublime sudo)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/ddennison/tools/trails/bin/unix:/usr/local/heroku/bin:/Users/ddennison/.gvm/vertx/current/bin:/Users/ddennison/.gvm/springboot/current/bin:/Users/ddennison/.gvm/lazybones/current/bin:/Users/ddennison/.gvm/groovyserv/current/bin:/Users/ddennison/.gvm/groovy/current/bin:/Users/ddennison/.gvm/griffon/current/bin:/Users/ddennison/.gvm/grails/current/bin:/Users/ddennison/.gvm/gradle/current/bin:/Users/ddennison/.gvm/gaiden/current/bin:/Users/ddennison/.cask/bin:/Users/ddennison/.rvm/gems/ruby-2.0.0-p195/bin:/Users/ddennison/.rvm/gems/ruby-2.0.0-p195@global/bin:/Users/ddennison/.rvm/rubies/ruby-2.0.0-p195/bin:/Users/ddennison/.rvm/bin:/Users/ddennison/.nvm/v0.10.15/bin:/usr/local/bin:/usr/local/sbin:/Users/ddennison/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Users/ddennison/tools/trails/bin/unix:/Users/ddennison/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -71,7 +74,7 @@ export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Ho
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -81,3 +84,5 @@ export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Ho
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias gpr="git pull --rebase"
