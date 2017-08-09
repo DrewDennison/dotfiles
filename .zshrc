@@ -86,3 +86,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias gpr="git pull --rebase"
+alias gprp="git pull --rebase && git push"
